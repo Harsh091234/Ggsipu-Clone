@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Navigation Bar */
+.navigationBar {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #041d54;
+}
+
+.mainLogo {
+    transform: translateY(4px);
+    height: 42px;
+    cursor: pointer;
+}
+
+.navTabs {
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.navTabs li a {
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+}
+
+.navTabs li a:hover {
+    color: rgb(255, 217, 0);
+}
+
+.navright {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: 3px;
+}
+
+.searchBar {
+    background-color: #fff;
+    height: 17px;
+    width: 90px;
+    border-radius: 3px;
+    border: none;
+    font-size: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.rightLogo {
+    width: 40px;
+    height: 40px;
+}
+
+/* Marquee */
+.cmarquee {
+    display: flex;
+    align-items: center;
+    height: 19px;
+    width: 100%;
+    background-color: #b9eafc;
+    font-size: 9px;
+    font-weight: bold;
+    color: black;
+}
+
+.cmarquee a {
+    text-decoration: none;
+}
+
+.cmarquee a.red {
+    color: #ff0000;
+}
+
+/* Lower Boxes */
+.lowerBoxes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5px;
+}
+.lowerBoxes div{
+    display: flex;
+    gap: 5px;
+}
+
+.rowCols {
+    height: 7em;
+    width: 11em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowCols img {
+    height: 34px;
+    position: absolute;
+    top: 7px;
+    z-index: 2;
+}
+
+.links {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    top: 19px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #b9eafc;
+    height: 90%;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.links a, .links .span1, .links .a1 {
+    font-size: 55%;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    word-break: break-word;
+}
+&:hover{
+    color: darkblue;
+}
+.links .a1:hover{
+    color: darkblue;
+}
+
+.links.p a {
+    text-decoration: underline solid #0d6efd;
+    color: #0d6efd;
+}
+.links.p a:hover{
+    color: darkblue;
+    text-decoration:underline solid darkblue;
+} 
