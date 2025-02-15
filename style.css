@@ -6,6 +6,10 @@
     font-family: sans-serif;
 }
 
+body {
+    padding-bottom: 2rem;
+}
+
 /* Navigation Bar */
 .navigationBar {
     display: flex;
@@ -88,13 +92,17 @@
 .lowerBoxes {
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4.5px;
+    
 }
-.lowerBoxes div{
+
+.lowerBoxes div {
     display: flex;
     gap: 5px;
+    margin-bottom: 10px;
 }
 
 .rowCols {
@@ -104,6 +112,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .rowCols img {
@@ -115,7 +124,7 @@
 
 .links {
     display: flex;
-    z-index: 1;
+
     position: relative;
     top: 19px;
     align-items: center;
@@ -125,9 +134,12 @@
     height: 90%;
     width: 100%;
     padding: 0 10px;
+    border-radius: 3px;
 }
 
-.links a, .links .span1, .links .a1 {
+.links a,
+.links .span1,
+.links .a1 {
     font-size: 55%;
     font-weight: 600;
     text-align: center;
@@ -135,10 +147,12 @@
     text-decoration: none;
     word-break: break-word;
 }
-&:hover{
+
+&:hover {
     color: darkblue;
 }
-.links .a1:hover{
+
+.links .a1:hover {
     color: darkblue;
 }
 
@@ -146,7 +160,89 @@
     text-decoration: underline solid #0d6efd;
     color: #0d6efd;
 }
-.links.p a:hover{
+
+.links.p a:hover {
     color: darkblue;
-    text-decoration:underline solid darkblue;
-} 
+    text-decoration: underline solid darkblue;
+}
+
+.vS {
+    position: relative;
+    width: 11em;
+    background-color: #b9eafc;
+    height: 15em;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+   align-items: center;
+   border-radius: 3px;
+
+}
+
+.vS .h {
+    height: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vS .h h1 {
+    font-size: 13px;
+    text-align: center;
+    padding-top: 21px;
+
+    font-weight: 600;
+}
+
+.vS .m {
+   
+    height: 67%;
+
+    padding-right: 9px;
+
+    width: 100%;
+}
+
+.vS .m marquee ul li a {
+    text-decoration: none;
+    font-size: 11px;
+    word-wrap: break-word;
+    color: black;
+}
+.vS .m marquee ul li a.p{
+    color: #ff0000;
+}
+.vS .m marquee ul li a:not(.p):hover{
+    color:#0004ff;
+}
+
+
+.vS  button{
+    border: none;
+    outline: none;
+        background-color: #041d54;
+    display: flex;
+    height: 21px;
+    width: 167px;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 6px;
+    transition: bottom .3s ease;
+  
+}
+.vS button a{
+    color:rgb(255, 217, 0);
+    text-decoration: none;
+    font-size: 10px;
+    font-weight:600;
+    
+   
+    
+}
+.vS button:hover{
+    bottom: 7.5px;
+    box-shadow: 2px 2px 6px rgb(22, 20, 102,0.8); 
+}
