@@ -7,7 +7,8 @@
 }
 
 body {
-    padding-bottom: 2rem;
+    
+   overflow-x: hidden;
 }
 
 /* Navigation Bar */
@@ -35,7 +36,7 @@ body {
     text-decoration: none;
     font-size: 8px;
     font-weight: bold;
-    color: white;
+    color: whitesmoke;
     padding: 5px;
 }
 
@@ -52,7 +53,7 @@ body {
 }
 
 .searchBar {
-    background-color: #fff;
+    background-color: whitesmoke;
     height: 17px;
     width: 90px;
     border-radius: 3px;
@@ -130,7 +131,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #b9eafc;
+    background-color: #b9eafc69;
     height: 90%;
     width: 100%;
     padding: 0 10px;
@@ -169,7 +170,7 @@ body {
 .vS {
     position: relative;
     width: 11em;
-    background-color: #b9eafc;
+    background-color: #b9eafc69;
     height: 15em;
     display: flex;
     gap: 0;
@@ -245,4 +246,53 @@ body {
 .vS button:hover{
     bottom: 7.5px;
     box-shadow: 2px 2px 6px rgb(22, 20, 102,0.8); 
+}
+
+.extraLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 100%;
+    height: 13rem;
+    background-color: #041d53;
+    margin-top: 2.65rem;
+    
+    
+
+}
+.extraLinks .row{
+    margin-top: 60px;
+}
+.extraLinks .row .col ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.extraLinks .row .col ul li{
+    padding: 0;
+    line-height: 15px;
+    letter-spacing: .1px;
+    margin: 0;
+   
+    text-align: center;
+}
+.extraLinks .row .col ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 300;
+    transition: .05s color linear;
+   
+  
+}
+.extraLinks .row .col ul li a:hover{
+    color: rgb(255, 217, 0);
+}
+.extraLinks .row p{
+    font-size: 7px;
+    color: whitesmoke;
+    letter-spacing: 0.1px;
+  text-align: center;
+    margin-top: 12px;
 }
