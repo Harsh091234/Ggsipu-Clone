@@ -14,9 +14,12 @@
 </head>
 
 <body>
+    <!-- navbar -->
     <nav>
-        <div class="navigationBar">
-            <img class="mainLogo" src="Assets/Images/ggsipu_LOGO.png" alt="GGSIPU Logo">
+        <div class="navigationBar" id="navbar">
+            <div class="mainLogo">
+                <img src="Assets/Images/ggsipu_LOGO.png" alt="GGSIPU Logo">
+            </div>
 
 
 
@@ -32,9 +35,21 @@
                 <li class="navItems distant"><a href="">Quick links <i class="fa fa-caret-down"
                             id="dropdownIcon"></i></a></li>
             </ul>
-            <div class="navright"><input class="searchBar" type="text" placeholder="Search links">
+            <div class="searchBarBlock" id="searchBarBlock">
+                <input class="searchBar" type="text" placeholder="Search links">
+            </div>
+            <div class="searchBarBlock1" id="searchBarBlock1">
+                <input class="searchBar1" type="text" placeholder="Search links">
+            </div>
+
+            <div class="navright">
+
                 <img src="Assets/Images/shlvrlogo.png" class="rightLogo" alt="">
             </div>
+           
+                <div  onclick="ShowMenu()" id="showMenu"><ion-icon name="menu"></ion-icon></div>
+                <div onclick="CloseMenu()" id="closeMenu"><ion-icon name="close"></ion-icon></div>
+           
 
         </div>
 
@@ -45,29 +60,29 @@
     <!-- carousal -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Assets/Images/carousal/c1.jpg" class="d-block carousalImage" alt="...">
+            <div class="carousel-item active" >
+                <img src="Assets/Images/carousal/c1.jpg" id="carousalImage" class="d-block carousalImage" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="Assets/Images/carousal/c2.jpg" class="d-block carousalImage" alt="...">
+                <img src="Assets/Images/carousal/c2.jpg" class="d-block" id="carousalImage" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="Assets/Images/carousal/c3.jpg" class="d-block carousalImage" alt="...">
+                <img src="Assets/Images/carousal/c3.jpg" class="d-block carousalImage" alt="..." id="carousalImage">
             </div>
             <div class="carousel-item">
-                <img src="Assets/Images/carousal/c3.jpg" class="d-block carousalImage" alt="...">
+                <img src="Assets/Images/carousal/c3.jpg" class="d-block carousalImage" alt="..." id="carousalImage">
             </div>
             <div class="carousel-item">
-                <img src="Assets/Images/carousal/c4.jpg" class="d-block carousalImage" alt="...">
+                <img src="Assets/Images/carousal/c4.jpg" class="d-block carousalImage" alt="..." id="carousalImage">
             </div>
             <div class="carousel-item">
-                <img src="Assets/Images/carousal/c5.jpg" class="d-block carousalImage" alt="...">
+                <img src="Assets/Images/carousal/c5.jpg" class="d-block carousalImage" alt="..." id="carousalImage">
             </div>
             <div class="carousel-item">
-                <img src="Assets/Images/carousal/c6.jpg" class="d-block carousalImage" alt="...">
+                <img src="Assets/Images/carousal/c6.jpg" class="d-block carousalImage" alt="..." id="carousalImage">
             </div>
             <div class="carousel-item">
-                <img src="Assets/Images/carousal/c7.jpg" class="d-block carousalImage" alt="...">
+                <img src="Assets/Images/carousal/c7.jpg" class="d-block carousalImage" alt="..." id="carousalImage">
             </div>
         </div>
         <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -301,6 +316,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 
 </html>
